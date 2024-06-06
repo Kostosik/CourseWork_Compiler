@@ -321,15 +321,8 @@ namespace Compiler
 
         private void постановкаЗадачиToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //string Path = System.Reflection.Assembly.GetAssembly(typeof({ Resourc})).Location;
-
-            //string PathToClassLibPro = Path.GetDirectoryName(Path);
             string htmlFilePath = @"C:\Users\Danilov\source\repos\Coursework_Compiler\Resources\htmls\task.html";
-            //string htmlFilePath = ResourceLocation.@"Resources\htmls\task.html";
-            //Properties.Resources.DiagnosticsAndNeutralization;
 
-            string path = System.Reflection.Assembly.GetAssembly(typeof(Properties.Resources)).Location;
-            path += "Task.html";
             try
             {
                 
@@ -484,7 +477,7 @@ namespace Compiler
         private int errorFunc(string input,int position, Dictionary<LexemeType, int> lexemeCodes, List<Lexeme>lexemes)
         {
             string invalid = input[position].ToString();
-            //flag = 1;
+             
             lexemes.Add(new Lexeme(lexemeCodes[LexemeType.Invalid], LexemeType.Invalid, input, position, position));
             position++;
             return position;
@@ -526,7 +519,6 @@ namespace Compiler
             List<Lexeme> lexemes = new List<Lexeme>();
 
             int position = 0;
-            //int flag = 0;
             while (position < input.Length)
             {
                 bool found = false;
@@ -539,7 +531,7 @@ namespace Compiler
                         lexemes.Add(new Lexeme(lexemeCodes[LexemeType.Keyword], LexemeType.Keyword, input, position, position + keyword.Length - 1));
                         position += keyword.Length;
                         found = true;
-                        //flag = 1;
+                         
                         break;
                     }
                 }
@@ -554,7 +546,7 @@ namespace Compiler
                         lexemes.Add(new Lexeme(lexemeCodes[LexemeType.Keyword_val], LexemeType.Keyword_val, input, position, position + keyword_val.Length - 1));
                         position += keyword_val.Length;
                         found = true;
-                        //flag = 1;
+                         
                         break;
                     }
                 }
@@ -569,7 +561,7 @@ namespace Compiler
                         lexemes.Add(new Lexeme(lexemeCodes[LexemeType.Equally], LexemeType.Equally, input, position, position + op.Length - 1));
                         position += op.Length;
                         found = true;
-                        //flag = 1;
+                         
                         break;
                     }
                 }
@@ -584,7 +576,7 @@ namespace Compiler
                         lexemes.Add(new Lexeme(lexemeCodes[LexemeType.Equally], LexemeType.Plus, input, position, position + op.Length - 1));
                         position += op.Length;
                         found = true;
-                       //flag = 1;
+                        
                         break;
                     }
                 }
@@ -599,7 +591,7 @@ namespace Compiler
                         lexemes.Add(new Lexeme(lexemeCodes[LexemeType.Equally], LexemeType.Minus, input, position, position + op.Length - 1));
                         position += op.Length;
                         found = true;
-                        //flag = 1;
+                         
                         break;
                     }
                 }
@@ -614,7 +606,7 @@ namespace Compiler
                         lexemes.Add(new Lexeme(lexemeCodes[LexemeType.Semicolon], LexemeType.Semicolon, input, position, position + op.Length - 1));
                         position += op.Length;
                         found = true;
-                        //flag = 1;
+                         
                         break;
                     }
                 }
@@ -631,7 +623,7 @@ namespace Compiler
                         lexemes.Add(new Lexeme(lexemeCodes[LexemeType.Delimiter], LexemeType.Delimiter, input, position, position + delimiter.Length - 1));
                         position += delimiter.Length;
                         found = true;
-                        //flag = 1;
+                         
                         break;
                     }
                 }
@@ -646,7 +638,7 @@ namespace Compiler
                         lexemes.Add(new Lexeme(lexemeCodes[LexemeType.EndStr], LexemeType.EndStr, input, position, position));
                         position++;
                         found = true;
-                        //flag = 1;
+                         
                         break;
                     }
                 }
@@ -661,7 +653,7 @@ namespace Compiler
                         lexemes.Add(new Lexeme(lexemeCodes[LexemeType.NewStr], LexemeType.NewStr, input, position, position));
                         position++;
                         found = true;
-                        //flag = 1;
+                         
                         break;
                     }
                 }
@@ -685,7 +677,7 @@ namespace Compiler
                 if (char.IsLetter(input[position]))
                 {
                     int start = position;
-                    //flag = 1;
+                     
                     if (input[position - 1] != ' ')
                     {
                         position = errorFunc(input, position, lexemeCodes, lexemes);
@@ -707,7 +699,7 @@ namespace Compiler
                 else if (char.IsDigit(input[position]))
                 {
                     int start = position;
-                    //flag = 1;
+                     
                     while (position < input.Length && char.IsDigit(input[position]))
                     {
                         position++;
