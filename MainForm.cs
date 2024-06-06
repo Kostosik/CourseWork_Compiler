@@ -439,7 +439,7 @@ namespace Compiler
         }
         private void исходныйКодПрограммыToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Process.Start($"https://github.com/Skywhisp/CourseWork_Compiler");
+            Process.Start($"https://github.com/Kostosik/CourseWork_Compiler");
         }
         private void оПрограммеToolStripMenuItem_Click(object sender, EventArgs e)
         {
