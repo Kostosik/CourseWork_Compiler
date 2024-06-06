@@ -1,21 +1,19 @@
-# Объявление целочисленной константы с инициализацией на языке Kotlin
+# Объявление вещественной константы с инициализацией на языке Java
 
 ## Примеры допустимых строк
 ```
-const val a: int = 10;
-const val b: int = 25;
+final double PI = 3.141592653589793;
 ```
 
 ## Разработанная грамматика
 ```
-<DEF> -> 'const' <CONST>
-<CONST> -> 'val' <VAL>
-<VAL> -> <IDENT>
-<IDENT> -> LETTER (DIGIT | LETTER | '_')* <COLON>
-<COLON> -> ':' <TYPE>
-<TYPE> -> 'int' <EQUALS>
+<DEF> -> 'final' <FINAL>
+<FINAL> -> 'double' <TYPE>
+<TYPE> -> <IDENT>
+<IDENT> -> LETTER (DIGIT | LETTER | '_')* <EQUALS>
 <EQUALS> -> '=' <NUMBER>
-<NUMBER> -> DIGIT+ <SEMICOLON>
+<NUMBER> -> DIGIT+ <POINT> + <NUMAFTERPOINT> 
+<NUMAFTERPOINT> -> DIGIT +<SEMICOLON>
 <SEMICOLON> -> ';' <END>
 ```
 
