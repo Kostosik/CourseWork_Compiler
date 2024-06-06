@@ -7,9 +7,8 @@ final double PI = 3.141592653589793;
 
 ## Разработанная грамматика
 ```
-<DEF> -> 'final' <FINAL>
-<FINAL> -> 'double' <TYPE>
-<TYPE> -> <IDENT>
+<DEF> -> 'final' <TYPE>
+<TYPE> -> 'double' <IDENT>
 <IDENT> -> LETTER (DIGIT | LETTER | '_')* <EQUALS>
 <EQUALS> -> '=' <NUMBER>
 <NUMBER> -> DIGIT+ <POINT> + <NUMAFTERPOINT> 
