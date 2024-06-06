@@ -190,7 +190,27 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Debug\pictures\" />
-    <Folder Include="Resources\htmls\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\htmls\DiagnosticsAndNeutralization.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\htmls\Examples.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\htmls\Grammar.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\htmls\GrammarClassification.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\htmls\Literature.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\htmls\MethodOfAnalisys.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\htmls\Task.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

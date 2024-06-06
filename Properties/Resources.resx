@@ -151,4 +151,25 @@
   <data name="run" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\run.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="DiagnosticsAndNeutralization" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\htmls\DiagnosticsAndNeutralization.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Examples" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\htmls\Examples.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Grammar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\htmls\Grammar.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GrammarClassification" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\htmls\GrammarClassification.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Literature" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\htmls\Literature.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="MethodOfAnalisys" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\htmls\MethodOfAnalisys.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Task" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\htmls\Task.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
 </root>

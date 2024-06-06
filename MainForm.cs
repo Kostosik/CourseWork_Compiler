@@ -7,6 +7,7 @@ using System.Windows.Forms;
 using System.Diagnostics;
 using System.Web;
 using System.Collections;
+using System.Reflection;
 
 namespace Compiler
 {
@@ -320,10 +321,18 @@ namespace Compiler
 
         private void постановкаЗадачиToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            string htmlFilePath = @"C:\Users\Vadim\Desktop\Compiler-CourseWork\Resources\htmls\task.html";
-            
+            //string Path = System.Reflection.Assembly.GetAssembly(typeof({ Resourc})).Location;
+
+            //string PathToClassLibPro = Path.GetDirectoryName(Path);
+            string htmlFilePath = @"C:\Users\Danilov\source\repos\Coursework_Compiler\Resources\htmls\task.html";
+            //string htmlFilePath = ResourceLocation.@"Resources\htmls\task.html";
+            //Properties.Resources.DiagnosticsAndNeutralization;
+
+            string path = System.Reflection.Assembly.GetAssembly(typeof(Properties.Resources)).Location;
+            path += "Task.html";
             try
             {
+                
                 Process.Start(new ProcessStartInfo
                 {
                     FileName = htmlFilePath,
@@ -337,7 +346,7 @@ namespace Compiler
         }
         private void грамматикаToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            string htmlFilePath = @"C:\Users\Vadim\Desktop\Compiler-CourseWork\Resources\htmls\Grammar.html";
+            string htmlFilePath = @"C:\Users\Danilov\source\repos\Coursework_Compiler\Resources\htmls\Grammar.html";
 
             try
             {
@@ -354,7 +363,7 @@ namespace Compiler
         }
         private void классификацияГрамматикиToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            string htmlFilePath = @"C:\Users\Vadim\Desktop\Compiler-CourseWork\Resources\htmls\GrammarClassification.html";
+            string htmlFilePath = @"C:\Users\Danilov\source\repos\Coursework_Compiler\Resources\htmls\GrammarClassification.html";
 
             try
             {
@@ -371,7 +380,7 @@ namespace Compiler
         }
         private void методАнализаToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            string htmlFilePath = @"C:\Users\Vadim\Desktop\Compiler-CourseWork\Resources\htmls\MethodOfAnalisys.html";
+            string htmlFilePath = @"C:\Users\Danilov\source\repos\Coursework_Compiler\Resources\htmls\MethodOfAnalisys.html";
 
             try
             {
@@ -388,7 +397,7 @@ namespace Compiler
         }
         private void диагностикаИНейтрализацияОшибокToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            string htmlFilePath = @"C:\Users\Vadim\Desktop\Compiler-CourseWork\Resources\htmls\DiagnosticsAndNeutralization.html";
+            string htmlFilePath = @"C:\Users\Danilov\source\repos\Coursework_Compiler\Resources\htmls\DiagnosticsAndNeutralization.html";
 
             try
             {
@@ -405,7 +414,7 @@ namespace Compiler
         }
         private void тестовыйПримерToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            string htmlFilePath = @"C:\Users\Vadim\Desktop\Compiler-CourseWork\Resources\htmls\Examples.html";
+            string htmlFilePath = @"C:\Users\Danilov\source\repos\Coursework_Compiler\Resources\htmls\Examples.html";
 
             try
             {
@@ -422,7 +431,7 @@ namespace Compiler
         }
         private void списокЛитературыToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            string htmlFilePath = @"C:\Users\Vadim\Desktop\Compiler-CourseWork\Resources\htmls\Literature.html";
+            string htmlFilePath = @"C:\Users\Danilov\source\repos\Coursework_Compiler\Resources\htmls\Literature.html";
 
             try
             {
